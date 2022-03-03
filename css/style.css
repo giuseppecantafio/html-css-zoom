@@ -7,9 +7,11 @@
 
 /* General */
 .debug{
-    border: 1px solid white;
+    border-top: 10px solid black;
+    border-left: 5px solid black;
 }
 body{
+    min-width: 1200px;
     background-color: black;
 }
 .white-text{
@@ -20,8 +22,12 @@ body{
 /* Header */
     /* Nav */
 nav{
-     width: 100%;
+    background-color: black;
+    width: 100%;
     height: 80px;
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
 }    
 .flex-container{
     display: flex;
@@ -33,5 +39,34 @@ nav{
     font-size: 1.8vh;
     background-color: #61574e;
     padding: 2px 5px;
-    border-radius: 10%;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+/* Main */
+main{
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 180px);
+    margin-top: 90px;
+    margin-bottom: 110px;
+    overflow-y: auto;
+}
+.flex-container-2{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 100%;
+    
+
+}
+.card{
+    width: calc(100% / 7);
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-repeat: no-repeat;
+    background-position: contain;
+}
+.user-info{
+    z-index: 1;
+
 }
