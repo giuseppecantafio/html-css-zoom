@@ -1,3 +1,5 @@
+/* Nel footer ho lasciato il debug perché mancano delle cose che sistemerò domani */
+
 /* Reset */
 *{
     margin: 0;
@@ -111,7 +113,7 @@ footer{
     height: 100%;
     justify-content: flex-end;
 }
-footer .flex-box{
+.flex-box{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -128,10 +130,9 @@ ul li{
 .fa-share-from-square{
     color: #4cc802;
 }
-.right-box .flex-box{
+.exit-box{
+    width: 40%;
     background-color: #4a4a4a;
-}
-.exit{
-    text-align: right;
     color: red;
+    justify-content: flex-end;
 }
