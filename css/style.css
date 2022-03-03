@@ -104,18 +104,14 @@ footer{
 .center-box{
     width: 60%;
     height: 100%;
+    justify-content: center;
 }
 .right-box{
     width: 20%;
     height: 100%;
+    justify-content: flex-end;
 }
-.flex-container-3{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-.flex-box{
+footer .flex-box{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -128,4 +124,14 @@ ul{
 ul li{
     vertical-align: middle;
     text-align: center;
+}
+.fa-share-from-square{
+    color: #4cc802;
+}
+.right-box .flex-box{
+    background-color: #4a4a4a;
+}
+.exit{
+    text-align: right;
+    color: red;
 }
