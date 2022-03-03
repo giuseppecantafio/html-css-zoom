@@ -10,7 +10,7 @@ html {
     font-family: sans-serif;
   }
 .debug{
-    border-top: 1px solid white;
+    border: 1px solid white;
 }
 body{
     min-width: 1200px;
@@ -29,7 +29,6 @@ nav{
     height: 80px;
     position: fixed;
     top: 0%;
-    z-index: 1000;
 }    
 .flex-container{
     display: flex;
@@ -49,16 +48,16 @@ nav{
 main{
     width: 90%;
     margin: 0 auto;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 210px);
     margin-top: 90px;
-    margin-bottom: 110px;
-    overflow-y: auto;
+    margin-bottom: 120px;
 }
 .flex-container-2{
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     height: 100%;
+    overflow-y: auto;
 
 }
 .card{
@@ -81,4 +80,32 @@ main{
     font-size: 1.7vh;
     padding: 1px 2px;
     background: linear-gradient(90deg, rgba(94,107,116,1) 0%, rgba(94,107,116,1) 50%, rgba(94,107,116,0) 110%);
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    bottom: 0%;
+    z-index: 1000;
+}
+.flex-container-3{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.left-box{
+    width: 20%;
+    height: 100%;
+}
+.center-box{
+    width: 70%;
+    height: 100%;
+}
+.right-box{
+    width: 10%;
+    height: 100%;
 }
